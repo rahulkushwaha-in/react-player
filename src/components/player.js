@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlay,
@@ -6,7 +6,7 @@ import {
   faAngleRight,
   faPause,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react/cjs/react.development";
+
 
 const Player = ({
   currentSong,

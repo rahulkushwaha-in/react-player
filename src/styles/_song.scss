@@ -1,0 +1,47 @@
+.song-container {
+  min-height: 60vh;
+  // background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 20%;
+    border-radius: 50%;
+  }
+  h2 {
+    margin-top: 2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
+.image-rotate {
+  -webkit-animation: spin 70s linear infinite;
+  -moz-animation: spin 70s linear infinite;
+  animation: spin 70s linear infinite;
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .song-container {
+    img {
+      width: 65%;
+    }
+  }
+}
